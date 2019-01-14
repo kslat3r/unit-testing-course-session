@@ -1,7 +1,7 @@
 {
-  "name": "mocha-chai-supertest-hackathon-api",
+  "name": "unit-testing-course-session-api",
   "version": "1.0.0",
-  "description": "Hackathon API",
+  "description": "Unit testing course session API",
   "main": "server/server.js",
   "scripts": {
     "start": "node .",
@@ -9,8 +9,7 @@
     "pretest": "npm run format",
     "test": "npm run test:coverage npm run test:unit",
     "test:coverage": "nyc",
-    "test:unit": "mocha --exit './server/**/*.spec.js'",
-    "test:component": "cross-env MOCHAWESOME_REPORTDIR=./test/reports MOCHAWESOME_REPORTFILENAME=mocha-report mocha --exit --timeout 100000 --reporter mochawesome './test/**/*.spec.js'"
+    "test:unit": "mocha --exit './server/**/*.spec.js'"
   },
   "engines": {
     "node": "8.9.4",
@@ -36,8 +35,7 @@
     "mochawesome": "3.0.2",
     "nyc": "10.2.0",
     "semistandard": "12.0.0",
-    "sinon": "4.3.0",
-    "supertest": "3.0.0"
+    "sinon": "4.3.0"
   },
   "nyc": {
     "include": [

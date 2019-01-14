@@ -1,1 +1,1 @@
-# mocha-chai-supertest-hackathon
+# unit-testing-course-session
