@@ -1,6 +1,6 @@
-## Mocha/Chai/Supertest workshop
+## Unit testing in Node.js
 
-### June 22nd 2018
+### February 5th 2019
 
 ---
 
@@ -10,7 +10,6 @@
 * NYC test code coverage tool
 * Creating good assertions with Chai
 * Mocking functions using Sinon
-* Component testing your application using Supertest
 
 *Bear in mind that this is a code-along!*
 
@@ -43,9 +42,9 @@
 
 ### Please clone the following repository from Github
 
-#### https://github.com/kslat3r/mocha-chai-supertest-hackathon
+#### https://github.com/kslat3r/unit-testing-course-session
 
-* Checkout the branch `step-one`
+* Checkout the `master` branch
 * Make sure you have a `src/` directory and navigate to it
 
 ---
@@ -108,21 +107,6 @@
 
 * Use `sinon` where appropriate to mock application dependencies outside of the units
 * Use `chai` where appropriate to create assertions against results
-
----
-
-## Writing some component tests
-
----
-
-### Steps to complete:
-
-* Install `supertest` HTTP assertion library
-* Configure `package.json` with a new NPM script to execute our component tests
-* In the directory `src/test/`, write component tests for:
-  * `GET /api/users`
-  * `GET /api/users/1`
-* **BONUS** add the `mochawesome` reporting tool
 
 ---
 
