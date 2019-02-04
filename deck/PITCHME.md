@@ -44,7 +44,7 @@
 
 #### https://github.com/kslat3r/unit-testing-course-session
 
-* Checkout the `master` branch
+* Checkout the `session` branch
 * Make sure you have a `src/` directory and navigate to it
 
 ---
