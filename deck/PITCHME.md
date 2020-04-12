@@ -45,7 +45,6 @@
 
 #### https://github.com/kslat3r/unit-testing-course-session
 
-* Checkout the `master` branch
 * Make sure you have a `src/` directory and navigate to it
 
 ---
@@ -72,6 +71,7 @@
 
 ### Steps to complete:
 
+* Checkout the `step-one` branch
 * Install `mocha` test runner
 * Install `nyc` code coverage tool
 * Add `nyc` configuration in `package.json`
@@ -85,6 +85,7 @@
 
 ### Steps to complete:
 
+* Checkout the `step-two` branch
 * Install `sinon`, a mocking library
 * Install `chai`, an assertion library
 
@@ -96,6 +97,7 @@
 
 ### Specs to complete:
 
+* Checkout the `step-three` branch
 * filters/todo.spec.js
 * mappers/todo.spec.js
 * services/todo.spec.js
