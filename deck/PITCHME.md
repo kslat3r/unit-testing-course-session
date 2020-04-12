@@ -73,6 +73,7 @@
 
 * Checkout the `step-one` branch
 * Install `mocha` test runner
+* Install `mochawesome` test report tool
 * Install `nyc` code coverage tool
 * Add `nyc` configuration in `package.json`
 * Reconfigure the `npm test` command to execute the empty spec files with `nyc` and `mocha`

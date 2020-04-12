@@ -6,9 +6,7 @@
     "start": "node ./bin/www",
     "format": "semistandard --env mocha --fix",
     "pretest": "npm run format",
-    "test": "npm run test:coverage npm run test:unit",
-    "test:coverage": "nyc",
-    "test:unit": "mocha --exit './**/*.spec.js' --exclude './node_modules/**/*'"
+    "test": "echo 'Tests go here'"
   },
   "dependencies": {
     "debug": "~2.6.9",
@@ -28,30 +26,6 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "mocha": "^5.2.0",
-    "mochawesome": "^4.1.0",
-    "nyc": "^14.1.1",
     "semistandard": "^14.2.0"
-  },
-  "nyc": {
-    "include": [
-      "**/*.js"
-    ],
-    "exclude": [
-      "**/*.spec.js",
-      "bin/*.js",
-      "index.js",
-      "node_modules/**/*"
-    ],
-    "reporter": [
-      "lcov",
-      "text",
-      "text-summary"
-    ],
-    "check-coverage": true,
-    "lines": 100,
-    "statements": 100,
-    "functions": 100,
-    "branches": 100
   }
 }

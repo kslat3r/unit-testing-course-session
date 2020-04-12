@@ -1,7 +1,7 @@
-const sinon = require('sinon');
-const { expect } = require('chai');
-const request = require('request-promise');
-const userService = require('./user');
+// const sinon = require('sinon');
+// const { expect } = require('chai');
+// const request = require('request-promise');
+// const userService = require('./user');
 
 describe('services/user.js', () => {
   afterEach(() => {
@@ -9,7 +9,7 @@ describe('services/user.js', () => {
   });
 
   it('list should return correct response', async () => {
- 
+
   });
 
   it('get should return correct response', async () => {
