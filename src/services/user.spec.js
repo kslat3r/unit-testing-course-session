@@ -1,9 +1,15 @@
 const sinon = require('sinon');
 const { expect } = require('chai');
-const server = require('../server');
+const request = require('request-promise');
 const userService = require('./user');
 
 describe('services/user.js', () => {
+  let stubbed;
+
+  afterEach(() => {
+    stubbed.restore();
+  });
+
   it('list should return correct response', async () => {
     const stub = [
       {
@@ -16,8 +22,8 @@ describe('services/user.js', () => {
       }
     ];
 
-    sinon.stub(server.dataSources.users, 'listDS')
-      .callsFake(() => stub);
+    stubbed = sinon.stub(request, 'get')
+      .callsFake(() => Promise.resolve(stub));
 
     const users = await userService.list();
 
@@ -30,8 +36,8 @@ describe('services/user.js', () => {
       name: 'Ed'
     };
 
-    sinon.stub(server.dataSources.users, 'getDS')
-      .callsFake(() => stub);
+    stubbed = sinon.stub(request, 'get')
+      .callsFake(() => Promise.resolve(stub));
 
     const user = await userService.get(1);
 

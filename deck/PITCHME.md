@@ -1,6 +1,6 @@
 ## Unit testing in Node.js
 
-### February 5th 2019
+### April 15th 2020
 
 ---
 
@@ -26,11 +26,12 @@
 
 ---
 
-* A terminal
-* A web browser
-* A text editor (Visual Studio Code)
-* Node.js v8.9.4
-* NPM v5.6.0
+* Visual Studio Code
+* Node v12.16.2 (https://nodejs.org/en/download/)
+* NPM v6.14.4
+* Git 2.20+
+* Web browser (ideally Google Chrome)
+* Terminal
 
 *Please double check you have the correct versions of Node/NPM*
 
@@ -57,7 +58,7 @@
 
 * `npm install`
 * `npm start`
-* `http://localhost:3000/explorer`
+* `http://localhost:3000/api/users`
 
 ---
 
@@ -97,7 +98,6 @@
 
 * filters/todo.spec.js
 * mappers/todo.spec.js
-* models/user.spec.js
 * services/todo.spec.js
 * services/user.spec.js
 
@@ -114,4 +114,4 @@
 
 ## Please fill out the below survey
 
-https://www.surveymonkey.co.uk/r/SFJBP2P
+TBC
